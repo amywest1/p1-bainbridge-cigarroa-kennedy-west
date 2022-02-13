@@ -1,5 +1,6 @@
 
 @import "./variables.less";
+@import "./mixin.less";
 
 //@height: 10px;
 
@@ -14,9 +15,9 @@
     font-family: 'Pacifico', cursive;
 }
 
-body{
-    background-color: @light-gray;
-}
+// body{
+//     background-color: @light-gray;
+// }
 
 p{
     font-family: @paragraph;
@@ -131,7 +132,7 @@ a {
 
 //menu page//
 .menu {
-    background-color: @light-gray;
+    // background-color: @light-gray;
     h1 {
         font-family: @header;
         font-size: 3rem;
@@ -152,7 +153,10 @@ a {
 
 //catering page//
 .catering {
-    background-color: @light-gray;
+    // background-color: @light-gray;
+    body {
+        @full_page();
+    }
     h1 {
         font-family: @header;
         font-size: 3rem;
@@ -200,3 +204,4 @@ a {
     padding: 0px;
     background-color: white;
 }
+
