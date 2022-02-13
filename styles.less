@@ -122,8 +122,8 @@ a {
 
 
 .about {
-    background-color: @light-gray;
-
+    // background-color: @light-gray;
+    .fullpage();
     .about-article {
         margin: 2rem;
     }
@@ -133,6 +133,7 @@ a {
 //menu page//
 .menu {
     // background-color: @light-gray;
+    .fullpage();
     h1 {
         font-family: @header;
         font-size: 3rem;
@@ -154,9 +155,7 @@ a {
 //catering page//
 .catering {
     // background-color: @light-gray;
-    body {
-        @full_page();
-    }
+    .fullpage();
     h1 {
         font-family: @header;
         font-size: 3rem;
@@ -187,21 +186,41 @@ a {
     height:0;
     text-align: center
     }
-.info h1 {
+// .info h1 {
+//     color: @primary-color;
+//     font-size: 48px;
+//     padding: 50px 0px 15px 0px;
+//     text-align: center
+// }
+// .info ul li {
+//     font-size: 20px;
+//     list-style-type: none;
+//     text-align: center;
+//     padding-bottom: 10px;
+//     float: none;
+// }
+// .info ul {
+//     padding: 0px;
+//     background-color: white;
+//     }
+.info {   
+    h1 {
     color: @primary-color;
-    font-size: 48px;
+    font-family: @header;
+    font-size: 3rem;
     padding: 50px 0px 15px 0px;
     text-align: center
-}
-.info ul li {
-    font-size: 20px;
+    }
+    ul li {
+    font-size: 1.25rem;
+    font-family: @paragraph;
     list-style-type: none;
     text-align: center;
     padding-bottom: 10px;
     float: none;
-}
-.info ul {
+    }
+    ul {
     padding: 0px;
     background-color: white;
+    }
 }
-
